@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FoodRecipes</string>
+    <string name="recipes_welcome_message">Good Morning</string>
+    <string name="recipes_user_name">Robert C.Martin</string>
+    <string name="recipe_details_title">Recipe</string>
+    <string name="error_network_error">There is an error happens, Please try again later</string>
+    <string name="error_http_api_limit">Unfortunately api limit was exceeded so please try again tomorrow.</string>
+    <string name="error_http_not_found">Result you request not found, please try another entity.</string>
+    <string name="error_retry_button_text">Try again</string>
+    <string name="recipe_details_likes_title">Likes</string>
+    <string name="recipe_details_minutes_title">Minutes</string>
+    <string name="recipe_details_serving_title">Serving</string>
+    <string name="recipe_details_price_title">Price</string>
+    <string name="recipe_details_ingredients_title">Ingredients</string>
+    <string name="recipe_details_ingredient_items">Items</string>
+    <string name="instructions">Instructions</string>
+    <string name="recipe_details_instructions_show_more">Show More</string>
+</resources>
