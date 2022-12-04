@@ -13,7 +13,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class DatabaseModule {
+class LocalModule {
     @Provides
     @Singleton
     fun provideRecipeDatabase(@ApplicationContext context: Context): RecipesDatabase {

@@ -1,11 +1,8 @@
 package com.example.foodrecipes.data.di
 
 import android.util.Log
-import com.example.foodrecipes.data.local.RecipeDetailsDao
 import com.example.foodrecipes.data.remote.Constants.BASE_URL
 import com.example.foodrecipes.data.remote.FoodRecipesApi
-import com.example.foodrecipes.data.repository.RecipeRepositoryImpl
-import com.example.foodrecipes.domain.repository.RecipeRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,7 +15,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object AppModule {
+object RemoteModule {
 
     private const val TAG = "API-LOGS"
 
@@ -51,14 +48,5 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(FoodRecipesApi::class.java)
-    }
-
-    @Provides
-    @Singleton
-    fun provideRecipeRepository(
-        api: FoodRecipesApi,
-        recipeDetailsDao: RecipeDetailsDao
-    ): RecipeRepository {
-        return RecipeRepositoryImpl(api, recipeDetailsDao)
     }
 }
