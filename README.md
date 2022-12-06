@@ -30,7 +30,7 @@ Uses concepts of the Uncle Bob's architecture [Clean Architecture](https://blog.
   - [Room](https://developer.android.com/topic/libraries/architecture/room) - Used to create room db and store the data.
   - [Navigation](https://developer.android.com/guide/navigation/navigation-getting-started) - Used to navigate between fragments.
 - [Retrofit](https://github.com/square/retrofit) - Used for REST api communication.
-- [OkHttp](http://square.github.io/okhttp/) - HTTP client that's efficient by default: HTTP/2 support allows all requests to the same host to share a socket
+- [Pagination 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview) - Helps you load and display pages of data from a larger dataset.
 - [Coil](https://coil-kt.github.io/coil/compose/) - Supported lib for loading images with jetpack compose. 
 
 ## TODO
