@@ -27,7 +27,6 @@ import com.example.foodrecipes.presentation.utils.HttpStatusCode
 @Composable
 fun RecipesDetailsScreen(
     navController: NavController,
-    id: Int,
     viewModel: RecipesDetailsScreenViewModel = hiltViewModel(),
 ) {
 
@@ -39,7 +38,6 @@ fun RecipesDetailsScreen(
         is RecipeDetailsUiState.Loaded -> RecipeDetails(
             recipeDetails = recipeDetailsState.data, navController = navController
         )
-        else -> {}
     }
 }
 

@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
                         )
                     ) {
                         val id = it.arguments?.getInt("id")
-                        RecipesDetailsScreen(navController, id!!)
+                        RecipesDetailsScreen(navController)
                     }
                 }
             }
