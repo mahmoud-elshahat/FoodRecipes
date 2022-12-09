@@ -30,9 +30,7 @@ fun RecipesDetailsScreen(
     id: Int,
     viewModel: RecipesDetailsScreenViewModel = hiltViewModel(),
 ) {
-    LaunchedEffect(true) {
-        viewModel.getRecipeDetails(id)
-    }
+
     when (val recipeDetailsState = viewModel.uiState.collectAsStateWithLifecycle().value) {
         is RecipeDetailsUiState.Loading -> LoadingView()
         is RecipeDetailsUiState.Error -> ErrorView(message = HttpStatusCode.getMeaningfulMessage(
