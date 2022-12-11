@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.foodrecipes.data.remote.Constants
 import com.example.foodrecipes.presentation.recipes_details_screen.RecipesDetailsScreen
 import com.example.foodrecipes.presentation.recipes_screen.RecipesScreen
 import com.example.foodrecipes.presentation.theme.FoodAppTheme
@@ -32,13 +33,12 @@ class MainActivity : ComponentActivity() {
                     composable(
                         route = Screen.RecipesDetailsScreen.route + "/{id}",
                         arguments = listOf(
-                            navArgument("id") {
+                            navArgument(Constants.PARAM_ID) {
                                 type = NavType.IntType
                                 defaultValue = 1
                             }
                         )
                     ) {
-                        val id = it.arguments?.getInt("id")
                         RecipesDetailsScreen(navController)
                     }
                 }
