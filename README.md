@@ -42,3 +42,4 @@ Uses concepts of the Uncle Bob's architecture [Clean Architecture](https://blog.
 ## Contributions
 Please feel free to file an issue for errors, suggestions or feature requests.
 
+>> If you faced issue when trying build app, at first check versions of gradle and use a working values from your current projects
